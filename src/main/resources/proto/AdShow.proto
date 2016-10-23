@@ -1,0 +1,9 @@
+import "AdShowData.proto";
+option java_package = "com.lagou.app.model";
+option java_outer_classname = "AdShowProto";
+
+message PdAdShow {
+	optional int32 pd_type = 1; // 1、弹窗，2、吸顶,3沟通专场列表顶部banner
+	repeated PdAdShowData pd_adShowDataList=2;
+	optional int32 pd_communicateIndex = 3 ;
+}

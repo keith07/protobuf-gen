@@ -1,0 +1,11 @@
+option java_package = "com.lagou.app.model";
+option java_outer_classname = "AdShowDataProto";
+
+message PdAdShowData {
+	required string pd_adCode = 1;//广告位编码
+    required int32 pd_adId = 2;//广告位ID
+    optional string pd_imageUrl = 3;// 图片url
+    optional string pd_infoLink=4;//  跳转链接
+    optional string pd_closeIcon=5;//关闭按钮图片
+    optional int32 pd_index=6;//顺序
+}
